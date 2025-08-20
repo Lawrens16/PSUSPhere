@@ -29,5 +29,6 @@ This is a demonstration 4th to 5th week project for CC 6/L: Application Developm
 - Django (requires Python to be installed)<br>
 <br>
 
-# Screen captures about our website:
-<h2>To be added later..</h2>
+# Authors of this:
+- Lawrence Magnetico (dev)
+- Nestor Jann Asag (documentation, deployment soon?)
