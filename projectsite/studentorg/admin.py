@@ -28,13 +28,13 @@ class CollegeAdmin(admin.ModelAdmin):
 @admin.register(Program)
 class ProgramAdmin(admin.ModelAdmin):
     list_display = ("prog_name","college",)
-    search_fields = ("search_fields","college","prog_name",)
+    search_fields = ("college","prog_name",)
     list_filter = ("college",)
 
 @admin.register(Organization)
 class OrganizationAdmin(admin.ModelAdmin):
     list_display = ("name","college","description")
-    search_fields = ("search_fields","name","description",)
+    search_fields = ("name","description",)
     list_filter = ("college",)
 
 
