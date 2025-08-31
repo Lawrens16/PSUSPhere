@@ -24,9 +24,9 @@ This is a demonstration 4th to 5th week project for CC 6/L: Application Developm
 # Tech stack and dependencies used in this project:
 - HTML5<br>
 - CSS3 <br>
-- Bootstrap (maybe)<br>
+- Bootstrap<br>
 - Python<br>
-- Django (requires Python to be installed)<br>
+- Django<br>
 <br>
 
 # Authors of this:
