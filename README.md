@@ -31,4 +31,3 @@ This is a demonstration 4th to 5th week project for CC 6/L: Application Developm
 
 # Authors of this:
 - Lawrence Magnetico (dev)
-- Nestor Jann Asag (documentation, deployment soon?)
