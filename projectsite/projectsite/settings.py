@@ -30,7 +30,7 @@ DEBUG = True
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # temporary lang to, need to change this in production
 # SECURITY WARNING: update this in production!
-ALLOWED_HOSTS = ['lawrens16Alt.pythonanywhere.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['lawrens16alt.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
