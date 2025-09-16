@@ -14,7 +14,7 @@
 	<div class="wrapper">
 		<div class="main-header">
 			<div class="logo-header">
-				<a href="index.html" class="logo">
+				<a href="{% url 'home' %}" class="logo">
 					Ready Dashboard
 				</a>
 				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,16 +25,7 @@
 			<nav class="navbar navbar-header navbar-expand-lg">
 				<div class="container-fluid">
 					
-					<form class="navbar-left navbar-form nav-search mr-md-3" action="">
-						<div class="input-group">
-							<input type="text" placeholder="Search ..." class="form-control">
-							<div class="input-group-append">
-								<span class="input-group-text">
-									<i class="la la-search search-icon"></i>
-								</span>
-							</div>
-						</div>
-					</form>
+					
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
 						<!-- notifications and profile remain unchanged -->
 					</ul>
@@ -50,8 +41,12 @@
 					<div class="info">
 						<a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
 							<span>
-								Hizrian
-								<span class="user-level">Administrator</span>
+								{{ request.user.username }}
+								{% if request.user.is_superuser %}
+									<span class="user-level">Administrator</span>
+								{% else %}
+									<span class="user-level">Regular User</span>
+								{% endif %}
 								<span class="caret"></span>
 							</span>
 						</a>
@@ -80,7 +75,7 @@
 				</div>
 				<ul class="nav">
 					<li class="nav-item">
-						<a href="{% url 'home' %}">
+						<a href="{% url 'admin:index' %}">
 							<i class="la la-dashboard"></i>
 							<p>Dashboard</p>
 						</a>
@@ -151,7 +146,7 @@
 	</div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="modalUpdate" tabindex="-1" role="dialog" aria-labelledby="modalUpdatePro" aria-hidden="true">
+<div class="modal fade" id="modalUpdate" tabindex="-1" role="dialog" aria-labelledby="modalUpdatePro" aria-	dden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">
 			<div class="modal-header bg-primary">
