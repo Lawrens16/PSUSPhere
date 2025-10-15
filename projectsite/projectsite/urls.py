@@ -21,6 +21,7 @@ from studentorg import views
 
 urlpatterns = [
     path("admin/", admin.site.urls, name='admin'),
+    path('', include('pwa.urls')),
     path("accounts/", include("allauth.urls")), # allauth routes
     path('', views.HomePageView.as_view(), name='home'),
     path('organization_list', OrganizationList.as_view(), name='organization-list'),
@@ -42,5 +43,6 @@ urlpatterns = [
     path('program_list', ProgramListView.as_view(), name='program-list'),
     path('program_list/add', ProgramCreateView.as_view(), name='program-add'),
     path("program_list/<pk>", ProgramUpdateView.as_view(), name='program-update'),
-    path('program_list/<pk>/delete', ProgramDeleteView.as_view(), name='program-delete'), 
+    path('program_list/<pk>/delete', ProgramDeleteView.as_view(), name='program-delete'),
+    
 ]   
