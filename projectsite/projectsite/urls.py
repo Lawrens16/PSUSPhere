@@ -21,6 +21,7 @@ from studentorg import views
 
 urlpatterns = [
     path("admin/", admin.site.urls, name='admin'),
+    path('api/', include('api.urls')),  # <-- includes all API routes
     path('', include('pwa.urls')),
     path("accounts/", include("allauth.urls")), # allauth routes
     path('', views.HomePageView.as_view(), name='home'),
