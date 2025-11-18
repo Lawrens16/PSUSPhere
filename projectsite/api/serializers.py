@@ -22,3 +22,9 @@ class ProgramSerializer(serializers.ModelSerializer):
     class Meta:
         model = Program
         fields = ['id', 'prog_name', 'college', 'students']
+
+
+
+
+
+
